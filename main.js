@@ -75,17 +75,32 @@ console.log(person.address);
 
 /************ Classes **************** */
 
-const User =(_name,_surname,_address)=>{
+class User{
+    constructor(_name,_surname,_address){
     this._name = _name;
     this._surname = _surname;
     this._address = _address
+    }
+
 }
 
-const user1 = new User("Kamogelo","Phaswane","77 Commisioner");
-const user2 = new User("Thobetso","jhksff","55 Elof");
-const user3 = new User("Chris","Brown","22 Marshall")
+const kamogelo = new User("Kamogelo","Phaswane","77 Commisioner");
+const thobetso = new User("Thobetso","jhksff","55 Elof");
+const chris = new User("Chris","Brown","22 Marshall")
 
-Console.log(user2);
+
+
+console.log(kamogelo);
 
 
 /************ Subclasess **************** */
+
+class person1 extends User{
+    constructor(_name,_surname,_address,cellNumber){
+        super(_name,_surname,_address);
+        this.cellNumber = cellNumber;
+    }
+}
+
+const personalDetails = new person1("Kamogelo"," Phaswane"," 77 Commisioner"," 0735360460");
+console.log(personalDetails)
