@@ -1,15 +1,16 @@
 /************ Const & Let **************** */
 
 /************ Arrow Functions **************** */
+
  sayHello =()=> {
 
-    console.log(`hello ${name}`);
+    console.log(`hello welcome`);
 }
 sayHello("muny");
 
-sayHello =name => {
+sayHello =name1 => {
 
-    console.log(`hello ${name}`);
+    console.log(`hello ${name1}`);
 }
 sayHello("aaron");
 
@@ -114,16 +115,30 @@ console.log(greet+ names);
 
 
 
-var human=class{
-    constructor(name){
-    this.name=name;
-    }
-    };
-    const Human = new human ('AARON');
-
-    console.log(Human.name)
+class Person{ 
     
+    constructor(Firstname){
 
+    this.names=Firstname;
+
+
+    }
+    
+}
+human = new Person('AARON');
+
+console.log(human.names)
 
 
 /************ Subclasess **************** */
+
+ class Secondnames extends Person{
+     constructor(Firstname,Surname){
+        super(Firstname)
+        this.Surname = Surname;
+     }
+    
+
+ }
+const nAme = new Secondnames("Thobetso"," Munyangane");
+console.log(nAme);
