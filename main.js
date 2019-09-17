@@ -1,4 +1,10 @@
 /************ Const & Let **************** */
+const pi=3.14
+console.log('Univen')
+
+let Team="Barcelona"
+
+console.log(`My fav team is ${Team}`)
 
 /************ Arrow Functions **************** */
 
@@ -20,8 +26,8 @@ sum =(a,b,c)=>
 
 sum(1,2,3);
 
-const provinces=["limpopo","gauteng",'north west'];
-provinces.forEach((province, index) =>console.log(`${index + 1}.${provinces}`))
+const provinces=["limpopo","gauteng","north west"];
+provinces.forEach(( province,  index) =>console.log(`${index + 1}.${province}`))
 
 
 
